@@ -1,7 +1,8 @@
 # My Weather Station
 
-This project documents a weather station powered by a particle photon that publishes to weather underground.
-![alt text](https://github.com/okie1/weatherstation/images/splash.PNG "My Weather Station")
+This project documents a solar powered weather station that is controlled by a particle photon that publishes to weather underground.
+
+![Weather Station](https://github.com/okie1/weatherstation/blob/master/images/splash.PNG)
 
 ## Overview
 I live in a rural area where we pride ourselves in knowing how much rain we got with the last bit of weather that rolled through. I always would use one of those free glass rain gauges that our local electric cooperative would give out each year. This past year, I forgot and left the gauge out after the first freeze and it busted. This spring, I decided I wanted to upgrade my rain gauge to a more accurate one. Being the computer nerd that I am I thought it would be cool to have a rain gauge that would keep a tally of all the rain I received throughout the year. So, I set out to build something that would do just that. One thing led to another and before I knew it, I had built a nice little weather station.
@@ -57,13 +58,44 @@ A few more miscellaneous parts that were used were:
 * Breadboard ([http://www.gikfun.com/electronic-pcb-board-c-60/3x-solderable-breadboardgold-plated-finish-proto-board-pcb-p-725.html](http://www.gikfun.com/electronic-pcb-board-c-60/3x-solderable-breadboardgold-plated-finish-proto-board-pcb-p-725.html))
 
 ## Circuit
+![Schematic](https://github.com/okie1/weatherstation/blob/master/images/Circuit.PNG)
 
 ## Code
+The code is posted on this github feed: [https://github.com/okie1/weatherstation](https://github.com/okie1/weatherstation)
 
 ## Assembly
+I assembled the circuit board as per the Frtizing diagram above. The only difference was that the wire terminals I had on hand actually covered 4 holes on the PCB board. This is why I did not mount them directly below the photon as I did want to retain access to all of the pins on the microcontroller.
+
+[Assembled Circuit Board](https://github.com/okie1/weatherstation/blob/master/images/CircuitBoard.PNG)
+
+I started with a blank sheet of acrylic and cut it on my table saw for height and width such that it would fit precisely in the back of my project box. I had to also round off the corners as well. Once this was done, I drilled holes to mount the circuit board and solar controller. I also drilled 4 holes to mount the acrylic to the project box.
+
+[Acrylic Before](https://github.com/okie1/weatherstation/blob/master/images/acrylic1.PNG)
+[Acrylic After](https://github.com/okie1/weatherstation/blob/master/images/acrylic2.PNG)
+
+I used 4 nuts as stand-offs for my circuit board. I mounted the solar controller directly to the acrylic and then bolted the acrylic to the project box. I left enough room at the bottom for the 12V battery. I went ahead and attached the solar controller and the microcontroller via a USB cable.
+
+[Major components indside of project box](https://github.com/okie1/weatherstation/blob/master/images/Project1.PNG)
+
+I drilled a hole in the bottom of the project box to run the wires through (back left corner). I wired
+everything as per the fritzing diagram above.
+
+[Components mounted and wired](https://github.com/okie1/weatherstation/blob/master/images/Project2.PNG)
+
+I did not take any good photos of the build of the Stevenson’s style box that houses the temperature, humidity, and barometric pressure sensors. It is just a wood box with vents on the left, right, and front that allow air to freely flow in and out but keep the sensors nice and dry. It is also made of wood and painted white to reflect the sun’s heat.
+
+I dug a 24” hole at the location where I wanted my weather station. I placed the angle iron end of the assembly into the hole and cemented it in making sure to hold the pole nice and plumb. Once the concrete dried, I could remove the top bolt and swing the entire station to the ground for any future maintenance.
+
+[Pole once cemented into ground](https://github.com/okie1/weatherstation/blob/master/images/PoleDown.PNG)
+
+Here is a photo with the pole in the maintenance position with all of the components mounted.
+[Pole once cemented into ground](https://github.com/okie1/weatherstation/blob/master/images/PoleDown2.PNG)
+
 
 ## Results
+
 
 ## Credits/Sources
 
 ## Hindsight
+
