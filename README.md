@@ -89,13 +89,35 @@ I dug a 24” hole at the location where I wanted my weather station. I placed t
 [Pole once cemented into ground](https://github.com/okie1/weatherstation/blob/master/images/PoleDown.PNG)
 
 Here is a photo with the pole in the maintenance position with all of the components mounted.
-[Pole once cemented into ground](https://github.com/okie1/weatherstation/blob/master/images/PoleDown2.PNG)
+
+[Weather Station down to add barometric sensor](https://github.com/okie1/weatherstation/blob/master/images/PoleDown2.PNG)
 
 
 ## Results
 
+I can now check the weather at my house no matter where I am: 
+
+[Weather Underground PWS Data](https://www.wunderground.com/personal-weather-station/dashboard?ID=KOKHULBE3&cm_ven=localwx_pwsdash)
+
+Aside from 2 lockups, I am pleased with the results.  The unit faithfully reports to weather underground every 15 seconds.  I need to do some more work setting the time zone for when the rain fall data is zeroed out (does so at midnight, local time).  I have had to go out twice and cycle power on the board as the microcontroller locked up.  I am still chasing those bugs in my code.
+
 
 ## Credits/Sources
 
+* [WIMP Weather Station](https://github.com/sparkfun/Wimp_Weather_Station) – I referred to this project often while constructing my own. 
+* [Particle.io](https://www.particle.io) – Documentation for all things Particle Photon 
+* [Adafruit.com](http://Adafruit.com) - This is where I bought my temperature, humidity, and barometric sensors
+* [Sparkfun.com](http://Sparkfun.com) - This is where the Argent Wind/Rain Sensor Assembly was purchased.
+* [Fritzing.com](http://fritzing.com) - Site for circuit creation software. 
+* [GitHub.com](http://github.com) - Site that hosts the source code for this project.
+
 ## Hindsight
+
+This is a list of things I ended up redoing or things I wish I did differently….
+* Barometric sensor – I did not originally purchase a barometric sensor.  Had I purchased the temperature, humidity, and barometric sensors all together, I may have been able to find a single sensor board that did all three as opposed to two separate boards that had some overlap.  (both boards will measure temperature).
+* Combine temp sensors and brains into single box – I think I could have saved quite a bit of money had I built a larger wooden box and housed all the electronic components inside of it.
+* Overkill on power – The 10-watt solar panel is overkill.  It was a leftover from my electric gate opener.  You could very likely get by with a 3-5-watt unit on this build.  This would cut cost as well. 
+* Don’t mount tipping bucket directly above electronics…. It dumps water on all your sensors.  I ended up swinging the rain gauge 180 degrees to dump on the solar panel instead.
+* Rollover bug?  I’m not sure if this was the source of my lockup or not, but I have fixed a few spots in the code where the problem would happen.  The bug would cause the station from reporting after 49 days.
+* Wire terminals….  I wish I would have purchased some that better fit my breadboard.  Then I would not have had to do the funky offset thing.
 
